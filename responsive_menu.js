@@ -1,3 +1,5 @@
+//everything below the responsiveFromWidth var will be prepared for responsiveness
+var responsiveFromWidth = 768;
 function ResponsiveMenu (obj) {
 	/*
 		This method is used to create some responsive listeners for the menu
@@ -85,8 +87,7 @@ function responsiveMenuInit (obj) {
 		alert("The object given is empty!");
 	}
 	
-    //everything below the responsiveFromWidth var will be prepared for responsiveness
-    var responsiveFromWidth = 768;
+    
     var windowWidth = $(window).width();
     
     if (responsiveFromWidth >= windowWidth) {
